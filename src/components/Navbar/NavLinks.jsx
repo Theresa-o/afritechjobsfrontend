@@ -23,13 +23,13 @@ const NavLinks = () => {
                   }`}
                 ></ion-icon>
               </span>
-              <span className="text-xl md:mt-1 md:ml-2 md:block hidden group-hover:rotate-180">
+              <span className="text-xl md:mt-1 md:ml-2 md:block hidden group-hover:rotate-180 group-hover:mb-2">
                 <ion-icon name="chevron-down"></ion-icon>
               </span>
             </h1>
             {link.subMenu && (
               <div>
-                <div className="absolute top-12 hidden group-hover:md:block hover:md:block">
+                <div className="absolute top-14 hidden group-hover:md:block hover:md:block">
                   <div>
                     {link.subLinks.map((subLinks) => (
                       <div>
