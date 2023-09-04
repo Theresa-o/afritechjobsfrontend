@@ -1,15 +1,16 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import NavLinks from "./NavLinks";
 import Button from "./Button";
-// import afritechlogo from "afritechlogo.png";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
   return (
     <nav className="bg-white">
       <div className="flex items-center font-medium justify-around">
-        <div className="z-50 p-5 md:w-auto w-full cursor-pointer">
+        <div className="z-50 p-5 md:w-auto w-full cursor-pointer flex justify-between">
           <Image
             src="/afritechlogo.png"
             alt="Afritech Logo"
@@ -17,7 +18,11 @@ const Navbar = () => {
             width={35}
             height={30}
           />
+          <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
+            <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
+          </div>
         </div>
+
         <ul className="md:flex hidden uppercase items-center gap-8 font-[Poppings]">
           <li>
             <Link href="/" className="py-7 px-3 inline-block">
@@ -31,9 +36,9 @@ const Navbar = () => {
         </div>
         {/* mobile nav view */}
         <ul
-          className={
-            "md:hidden bg-white absolute w-full h-full bottom-0 py-24 pl-4"
-          }
+          className={`md:hidden bg-white absolute w-full h-full bottom-0 py-24 pl-4 duration-500 ${
+            open ? "left-0" : "left-[-100%]"
+          } `}
         >
           <li>
             <Link href="/" className="py-7 px-3 inline-block">
