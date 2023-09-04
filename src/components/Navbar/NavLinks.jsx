@@ -7,7 +7,7 @@ const NavLinks = () => {
   return (
     <>
       {menuLinks.map((link) => (
-        <div>
+        <div key={link.id}>
           <div className="px-3 text-left cursor-pointer group">
             <h1
               className="py-7 flex justify-between items-center md:pr-0 pr-5 group"

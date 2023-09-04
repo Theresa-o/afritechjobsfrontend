@@ -1,5 +1,6 @@
 export const menuLinks = [
   {
+    id: 1,
     name: "Community",
     subMenu: true,
     subLinks: [
@@ -14,6 +15,7 @@ export const menuLinks = [
     ],
   },
   {
+    id: 2,
     name: "Talents",
     subMenu: true,
     subLinks: [
@@ -28,6 +30,7 @@ export const menuLinks = [
     ],
   },
   {
+    id: 3,
     name: "Employers",
     subMenu: true,
     subLinks: [
