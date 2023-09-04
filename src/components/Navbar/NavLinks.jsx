@@ -31,10 +31,13 @@ const NavLinks = () => {
               <div>
                 <div className="absolute top-14 hidden group-hover:md:block hover:md:block">
                   <div>
-                    {link.subLinks.map((subLinks) => (
-                      <div>
+                    {link.subLinks.map((subLinks, subIndex) => (
+                      <div key={subIndex}>
                         {subLinks.subLink.map((eachlink) => (
-                          <li className="text-sm text-gray-600 my-2.5">
+                          <li
+                            key={eachlink.id}
+                            className="text-sm text-gray-600 my-2.5"
+                          >
                             <Link
                               className="hover:text-indigo-500"
                               href={eachlink.link}
@@ -53,11 +56,11 @@ const NavLinks = () => {
           {/* mobile menu */}
           <div className={`${heading === link.name ? "md:hidden" : "hidden"}`}>
             {/* sublinks */}
-            {link.subLinks.map((navsublinks) => (
-              <div>
+            {link.subLinks.map((navsublinks, subIndex) => (
+              <div key={subIndex}>
                 <div>
                   {navsublinks.subLink.map((eachlink) => (
-                    <li className="py-3 pl-14">
+                    <li key={eachlink.id} className="py-3 pl-14">
                       <Link
                         className="hover:text-indigo-500"
                         href={eachlink.link}
