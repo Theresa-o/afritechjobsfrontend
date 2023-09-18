@@ -6,7 +6,7 @@ const MainJobListings = () => {
     <section>
       <div>
         <div>
-          <div>search </div>
+          {/* <div>search </div> */}
           <div className="job-listings-container">
             {/* -------------new desktop view */}
             <div className="job-listing gradient mx-auto flex w-5/6 px-5 items-center justify-center m-5">
@@ -60,8 +60,44 @@ const MainJobListings = () => {
               </div>
             </div>
 
-            {/* -------------new mobile view */}
-            <div className="job-listing gray mx-auto flex max-w-screen-lg px-5 items-center justify-center m-4">
+            <div className="job-listing gray mx-auto md:flex md:w-5/6 max-w-screen-lg px-5 items-center justify-center m-4 ">
+              <div className="listing h-30 w-full rounded-md">
+                <div className="border-2 border-gray-500 p-2 h-full w-full flex items-center">
+                  <a href="#" className="w-full flex items-center">
+                    <div className="job-logo bg-gray-200 rounded-full h-20 w-20 hidden md:flex flex-shrink-0 md:m-5">
+                      <img
+                        src="/afritechlogo.png"
+                        alt="Afritech Logo"
+                        className="rounded-full h-18"
+                      />
+                    </div>
+                    <div className="job-position-details ml-4 flex-grow m-4 md:m-9">
+                      <div className="job-meta flex justify-between align-center w-full">
+                        <h2 className="text-xl font-semibold mb-2">
+                          Job Title
+                        </h2>
+                        <p className="text-gray-600 flex">Location</p>
+                      </div>
+                      <div className="job-meta flex justify-between align-center w-full">
+                        <p className="text-gray-600">Company Name</p>
+                        <p className="text-gray-600">Job Contract</p>
+                      </div>
+
+                      <div className="job-meta flex justify-between align-center whitespace-nowrap w-full">
+                        <p className="text-gray-600">Keywords</p>
+                        <span className="text-sm text-gray-600">
+                          Posted: 10 Sept
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* old */}
+            {/* ------------- */}
+            {/* <div className="job-listing gray mx-auto flex max-w-screen-lg px-5 items-center justify-center m-4">
               <div className="listing h-36 w-full rounded-md">
                 <div className="border-2 border-gray-500 p-2 h-full w-full flex justify-around ">
                   <a href="#">
@@ -96,11 +132,9 @@ const MainJobListings = () => {
                   </a>
                 </div>
               </div>
-            </div>
-
-            {/* -------------new mobile view */}
-
-            <div className="job-listing gradient mx-auto flex max-w-screen-xl px-5 items-center justify-center m-5">
+            </div> */}
+            {/* ------------- */}
+            {/* <div className="job-listing gradient mx-auto flex max-w-screen-xl px-5 items-center justify-center m-5">
               <div className="listing h-48 w-full rounded-md bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500 p-1">
                 <div className="listing-content h-full w-full bg-white">
                   <a href="#">
@@ -110,42 +144,8 @@ const MainJobListings = () => {
                   </a>
                 </div>
               </div>
-            </div>
-
-            <div className="job-listing gray mx-auto flex max-w-screen-lg px-5 items-center justify-center m-4">
-              <div className="listing h-36 w-full rounded-md">
-                <div className="border-2 border-gray-500 p-2 h-full w-full flex items-center">
-                  <a href="#" className="w-full flex items-center">
-                    <div className="job-logo bg-gray-200 rounded-full h-20 w-20 hidden md:flex flex-shrink-0 md:m-5">
-                      <img
-                        src="/afritechlogo.png"
-                        alt="Afritech Logo"
-                        className="rounded-full h-18"
-                      />
-                    </div>
-                    <div className="job-position-details ml-4 flex-grow m-4 md:m-9">
-                      <div className="job-meta flex justify-between align-center w-full">
-                        <h2 className="text-xl font-semibold mb-2">
-                          Job Title
-                        </h2>
-                        <p className="text-gray-600 flex">Location</p>
-                      </div>
-                      <div className="job-meta flex justify-between align-center w-full">
-                        <p className="text-gray-600">Company Name</p>
-                        <p className="text-gray-600">Job Contract</p>
-                      </div>
-
-                      <div className="job-meta flex justify-between align-center whitespace-nowrap w-full">
-                        <p className="text-gray-600">Keywords</p>
-                        <span className="text-sm text-gray-600">
-                          Posted: 10 Sept
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
+            </div> */}
+            {/* old */}
           </div>
         </div>
       </div>
