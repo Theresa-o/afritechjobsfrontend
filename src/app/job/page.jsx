@@ -57,57 +57,6 @@ const Job = () => {
           <hr />
 
           <div className="main-job-listing grid lg:grid-cols-12 gap-20">
-            {/* <div className="company-card m-10 w-full">
-              <div className="container mx-auto ">
-                <div className="flex flex-wrap mx-4">
-                  <div className="p-4">
-                    <a
-                      href=""
-                      className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden"
-                    >
-                      <div classNames="p-4">
-                        <h2 className="mt-2 mb-2  font-bold">Company name</h2>
-                        <a href="#">
-                          <small>Company website</small>
-                        </a>
-                        <div className="mt-3 flex items-center">
-                          <span className="text-sm font-semibold">
-                            Location:
-                          </span>
-                        </div>
-                        <span className="inline-block px-2 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">
-                          Fully remote
-                        </span>
-                      </div>
-                      <div className="p-4 border-t border-b text-xs text-gray-700">
-                        <span className="flex items-center">
-                          <i className="far fa-address-card fa-fw text-gray-900 mr-2"></i>{" "}
-                          Apply for this position
-                          {/* turn this to a button */}
-            {/* </span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className="max-w-xs mx-auto bg-white shadow-md rounded-lg grid md:col-span-3">
-              <div className="p-4">
-                <h2 className="text-2xl font-semibold text-gray-800">
-                  company Name
-                </h2>
-                <p className="text-gray-600">website</p>
-                <p className="text-gray-600">location</p>
-                <p className="text-green-600">Fully Remote</p>
-              </div>
-              <div className="px-4 py-2 bg-gray-100">
-                <button className="block w-full px-4 py-2 text-white bg-blue-500 hover:bg-blue-600 rounded-full">
-                  Apply for this position
-                </button>
-              </div>
-            </div> */}
-
             <div className="max-w-xs mx-auto bg-white shadow-md rounded-lg grid md:col-span-3">
               <div className="m-10 w-full">
                 <div className="mb-5">
