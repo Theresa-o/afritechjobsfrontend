@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { menuLinks } from "./NavLinksList";
+import Image from "next/image";
+// import circle from "../public/circle.svg";
 
 const NavLinks = () => {
   const [heading, setHeading] = useState("");
@@ -25,6 +27,7 @@ const NavLinks = () => {
               </span>
               <span className="text-xl md:mt-1 md:ml-2 md:block hidden group-hover:rotate-180 group-hover:mb-2">
                 <ion-icon name="chevron-down"></ion-icon>
+                {/* <img src="/circle.svg" alt="Hello" /> */}
               </span>
             </h1>
             {link.subMenu && (

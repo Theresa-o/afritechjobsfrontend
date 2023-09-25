@@ -2,7 +2,7 @@ import React from "react";
 
 const Job = () => {
   return (
-    <main className=" bg-slate-200 pb-20">
+    <main className=" bg-slate-200 pb-20 md:px-20">
       <div className="container md:container">
         <div className="inner-container flex justify-between mx-auto p-10">
           <div className="flex">
@@ -55,48 +55,34 @@ const Job = () => {
           </div>
           <br />
           <hr />
+
           <div className="main-job-listing flex align-center content-center gap-20">
-            <div className="company-card">
+            <div className="company-card mx-10">
               <div class="container mx-auto">
-                <div class="flex flex-wrap -mx-4">
-                  <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
+                <div class="flex flex-wrap mx-4">
+                  <div class="w-full p-4">
                     <a
                       href=""
                       class="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden"
                     >
-                      <div class="relative pb-48 overflow-hidden">
-                        <img
-                          class="absolute inset-0 h-full w-full object-cover"
-                          src="https://images.unsplash.com/photo-1475855581690-80accde3ae2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                          alt=""
-                        />
-                      </div>
                       <div class="p-4">
-                        <span class="inline-block px-2 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">
-                          Highlight
-                        </span>
-                        <h2 class="mt-2 mb-2  font-bold">
-                          Purus Ullamcorper Inceptos Nibh
-                        </h2>
-                        <p class="text-sm">
-                          Cras justo odio, dapibus ac facilisis in, egestas eget
-                          quam. Donec ullamcorper nulla non metus auctor
-                          fringilla.
-                        </p>
+                        <h2 class="mt-2 mb-2  font-bold">Company name</h2>
+                        <a href="#">
+                          <small>Company website</small>
+                        </a>
                         <div class="mt-3 flex items-center">
                           <span class="text-sm font-semibold">Location:</span>
-                          &nbsp;
-                          <span class="font-bold text-xl">Lagos</span>
                         </div>
+                        <span class="inline-block px-2 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">
+                          Fully remote
+                        </span>
                       </div>
                       <div class="p-4 border-t border-b text-xs text-gray-700">
                         <span class="flex items-center">
                           <i class="far fa-address-card fa-fw text-gray-900 mr-2"></i>{" "}
                           Apply for this position
+                          {/* turn this to a button */}
                         </span>
-                      </div>
-                      <div class="p-4 flex items-center text-sm text-gray-600">
-                        <span class="ml-2">View all jobs</span>
                       </div>
                     </a>
                   </div>
