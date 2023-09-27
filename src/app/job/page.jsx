@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import Button from "@/components/Button/Button";
 
 const Job = () => {
   return (
@@ -57,8 +59,8 @@ const Job = () => {
           <hr />
 
           <div className="main-job-listing grid lg:grid-cols-12 gap-20">
-            <div className="max-w-xs mx-auto bg-white shadow-md rounded-lg grid md:col-span-3">
-              <div className="m-10 w-full">
+            <div className="max-w-xs mx-auto sticky space-y grid md:col-span-3">
+              <div className="mx-10 mt-10 w-full">
                 <div className="mb-5">
                   <div className="font-bold">Company</div>
                   <div className="flex items-center mt-2 space-x-2 text-gray-600">
@@ -74,15 +76,19 @@ const Job = () => {
                   <div className="font-bold">Location</div>
                   <div className="mt-2 text-gray-600">Fully remote</div>
                 </div>
-                <div className="flex content-center justify-center w-full mb-5">
+                <div className="flex md:content-center md:justify-center w-full md:mb-5">
                   <a href="#">
-                    <button>Apply</button>
+                    <Button
+                      style="bg-indigo-500 text-white px-6 py-2 rounded-full flex justify-center"
+                      onClick={() => console.log("apply")}
+                      text="APPLY"
+                    />
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="job-details m-10 grid md:col-span-9">
+            <div className="job-details m-5 md:m-10 grid md:col-span-9">
               <div className="job-title font-bold text-2xl">
                 <h1>
                   Senior ML/ Python Engineer (Open-Source; Core Founding Team)
@@ -155,7 +161,13 @@ const Job = () => {
                   </div>
                 </div>
               </div>
-              <button className="font-bold text-2xl">Apply for this job</button>
+              <a className="font-bold md:text-2xl">
+                <Button
+                  style="bg-indigo-500 text-white px-6 py-2 rounded-full flex justify-center"
+                  onClick={() => console.log("apply")}
+                  text="Apply for this job"
+                />
+              </a>
             </div>
           </div>
         </div>

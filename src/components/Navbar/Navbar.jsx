@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import NavLinks from "./NavLinks";
-import Button from "./Button";
+import Button from "../Button/Button";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -33,7 +33,11 @@ const Navbar = () => {
             <NavLinks />
           </ul>
           <div className="md:block hidden">
-            <Button />
+            <Button
+              style="bg-indigo-500 text-white px-6 py-2 rounded-full"
+              onClick={() => console.log("Create a form")}
+              text="POST A JOB"
+            />
           </div>
           {/* mobile nav view */}
           <ul
@@ -48,7 +52,11 @@ const Navbar = () => {
             </li>
             <NavLinks />
             <div className="py-3">
-              <Button />
+              <Button
+                style="bg-indigo-500 text-white px-6 py-2 rounded-full flex justify-center"
+                onClick={() => console.log("Create a form")}
+                text="POST A JOB"
+              />
             </div>
           </ul>
         </div>

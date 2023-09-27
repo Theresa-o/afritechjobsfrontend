@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="grid lg:grid-cols-2 my-10">
-        <div className="ml-8 md:ml-10">
+        <div className="ml-8 md:ml-10 mb-10 md:mb-1">
           <div className="h-auto w-20">
             <img src="/afritechlogo.png" alt="Afritech Logo" />
           </div>
