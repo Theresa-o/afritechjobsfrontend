@@ -54,7 +54,7 @@ const Navbar = () => {
             <div className="py-3">
               <Button
                 style="bg-indigo-500 text-white px-6 py-2 rounded-full flex justify-center"
-                onClick={() => console.log("Create a form")}
+                url="/"
                 text="POST A JOB"
               />
             </div>

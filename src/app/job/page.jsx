@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Button from "@/components/Button/Button";
 
@@ -80,7 +79,7 @@ const Job = () => {
                   <a href="#">
                     <Button
                       style="bg-indigo-500 text-white px-6 py-2 rounded-full flex justify-center"
-                      onClick={() => console.log("apply")}
+                      url="/"
                       text="APPLY"
                     />
                   </a>
@@ -164,7 +163,7 @@ const Job = () => {
               <a className="font-bold md:text-2xl">
                 <Button
                   style="bg-indigo-500 text-white px-6 py-2 rounded-full flex justify-center"
-                  onClick={() => console.log("apply")}
+                  url="/"
                   text="Apply for this job"
                 />
               </a>
